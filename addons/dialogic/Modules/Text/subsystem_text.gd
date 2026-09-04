@@ -461,7 +461,10 @@ func color_character_names(text:String) -> String:
 
 	var counter := 0
 	for result in color_regex.search_all(text):
-		text = text.insert(result.get_start("name")+((9+8+8)*counter), '[color=#' + character_colors[result.get_string('name')].to_html() + ']')
+		var name_key := result.get_string('name')
+		if not character_colors.has(name_key):
+			continue
+		text = text.insert(result.get_start("name")+((9+8+8)*counter), '[color=#' + character_colors[name_key].to_html() + ']')
 		text = text.insert(result.get_end("name")+9+8+((9+8+8)*counter), '[/color]')
 		counter += 1
 
