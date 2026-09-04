@@ -1,10 +1,15 @@
-# Godot 4 Open RPG
+# Godot 4 Open RPG (Summer Engine template)
+
+> **Made by [GDQuest](https://www.gdquest.com/), adapted for Summer Engine.**
+> This is GDQuest's open-source OpenRPG demo
+> ([original repository](https://github.com/gdquest-demos/godot-open-rpg)),
+> MIT-licensed code and CC-BY 4.0 art. If you ship a game built on it, credit GDQuest — see `LICENSE` and `CREDITS.md`.
 
 ![Godot Open RPG banner](media/Open-RPG.png)
 
-OpenRPG is a a demo showing how to create a classical turn-based RPG in Godot 4. It's currently a work-in-progress.
+OpenRPG is a demo showing how to create a classical turn-based RPG in Godot 4. It's currently a work-in-progress.
 
-**You need to use Godot 4.5 to open the project!** You can find Godot 4.5 on the [Godot website](https://godotengine.org/).
+**Open the project in Summer Engine (a Godot 4.6 fork); `project.godot` targets the 4.6 feature set.** Upstream targets Godot 4.5.
 
 ➡ Follow us on [Twitter](https://twitter.com/NathanGDQuest) and [YouTube](https://www.youtube.com/c/gdquest/) for Godot tips and tutorials! Get one of our [Godot game creation courses](https://www.gdquest.com/product/) to support our work on Free Software.
 

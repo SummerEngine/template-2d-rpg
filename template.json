@@ -1,0 +1,40 @@
+{
+  "id": "2d-rpg",
+  "version": "1.0.1",
+  "name": "OpenRPG",
+  "engineMinVersion": "0.5.43",
+  "entryScene": "res://src/main.tscn",
+  "dimension": "2D",
+  "mechanics": [
+    "grid-based-movement",
+    "top-down-overworld",
+    "turn-based-combat",
+    "party-battlers",
+    "dialogue-timelines",
+    "cutscenes",
+    "interactions",
+    "inventory",
+    "map-transitions",
+    "screen-transitions",
+    "music-player"
+  ],
+  "genres": [
+    "rpg",
+    "turn-based",
+    "top-down",
+    "adventure"
+  ],
+  "agentBrief": "ATTRIBUTION: this is GDQuest's open-source OpenRPG demo (github.com/gdquest-demos/godot-open-rpg; MIT code, CC-BY 4.0 GDQuest art plus the CC0 packs listed in CREDITS.md) adapted for Summer Engine (Godot 4.6, GL Compatibility) — keep GDQuest credited in LICENSE/README/CREDITS.md and tell users to credit GDQuest in shipped games. A classical 2D top-down RPG demo, work-in-progress upstream. ENTRY SCENE: res://src/main.tscn (town map with NPCs, an opening cutscene and encounters; also overworld/maps/forest and overworld/maps/house). FIELD (src/field/): grid-based Gamepiece movement (src/field/gamepieces/gamepiece.gd, Path2D-based, no physics collision) over a Gameboard autoload that owns the pathfinder; GamepieceRegistry autoload tracks where everything is; controllers under src/field/gamepieces/controllers/ drive player and AI pieces; cutscenes/interactions under src/field/cutscenes/ (doors, pickups, conversations, combat encounters); inventory UI under src/field/ui/. COMBAT (src/combat/ + combat/): sequential turn-based combat (see CHANGELOG v0.3.4) — each round every Battler picks an action via menus, then actions execute; battlers (bear, bugcat, squirrel, wolf under combat/battlers/), actions under src/combat/actions/, combat UI under src/combat/ui/, arenas under combat/arenas/. DIALOGUE: the bundled Dialogic addon (addons/dialogic, autoload Dialogic) runs .dtl timelines stored next to the maps (overworld/maps/town/*.dtl, opening_cutscene.dtl). AUTOLOADS (9, wired in project.godot): Camera, CombatEvents, FieldEvents, Gameboard, GamepieceRegistry, Music, Player, Transition, Dialogic — extend these rather than adding parallel singletons. INPUT ACTIONS (already bound): ui_left/right/up/down, select, interact, back, dialogic_default_action. ART: Kenney Tiny Town tileset plus GDQuest character art; many .png/.ttf/.ogg assets ship with their .import files committed. NOTE: no tests/ or verification scripts ship; upstream README still describes GDQuest's contribution workflow. CUSTOMIZE BY: adding maps under overworld/maps/ with new .dtl timelines, adding battlers and actions on the existing Battler/BattlerAction classes, extending inventory items — do not rewrite the Gameboard/Gamepiece/Dialogic spine.",
+  "shipsProjectGodot": true,
+  "userFacing": {
+    "tagline": "GDQuest's OpenRPG: a top-down 2D RPG with grid movement, dialogue, cutscenes and turn-based combat.",
+    "highlights": [
+      "Grid-based overworld movement with a pathfinding gameboard and NPC controllers",
+      "Sequential turn-based combat with party battlers, actions and a combat UI",
+      "Dialogue and cutscenes authored as Dialogic timelines next to each map",
+      "Town, forest and house maps with doors, pickups, encounters and an inventory",
+      "Kenney Tiny Town art and CC0 music, all credited in CREDITS.md",
+      "MIT code and CC-BY 4.0 art by GDQuest, adapted for Summer Engine"
+    ]
+  }
+}
